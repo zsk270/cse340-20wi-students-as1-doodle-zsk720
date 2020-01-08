@@ -49,7 +49,7 @@ public abstract class Part1 extends Doodler {
     }
 
     @Override
-    public ImageView addLine(FrameLayout mainCanvas, float startX, float startY, float endX, float endY,
+    public LineView addLine(FrameLayout mainCanvas, float startX, float startY, float endX, float endY,
                       int width, int color) {
         LineView line = new LineView(this, startX, startY, endX, endY, width, color);
         mainCanvas.addView(line);

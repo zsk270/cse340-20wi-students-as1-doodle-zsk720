@@ -9,8 +9,6 @@ import android.support.v7.widget.AppCompatImageView;
 
 public class LineView extends AppCompatImageView {
 
-    private PointF startPoint;
-
     private PointF endPoint;
 
     private Paint brush;
