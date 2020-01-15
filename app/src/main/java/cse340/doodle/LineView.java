@@ -15,7 +15,10 @@ public class LineView extends AppCompatImageView {
 
     public LineView(Context context, float startX, float startY, float endX, float endY, int width, @ColorInt int color) {
         super(context);
-
+        endPoint = new PointF(endX - startX, endY - startY);
+        brush = new Paint();
+        brush.setColor(color);
+        brush.setStrokeWidth(width);
         /*
          * TODO: Write the constructor for your LineView class.
          * You should use the provided fields to record the state of the line.
@@ -26,5 +29,6 @@ public class LineView extends AppCompatImageView {
 
     protected void onDraw(Canvas canvas) {
         // TODO: draw your line onto the canvas!
+        canvas.drawLine(0, 0, endPoint.x, endPoint.y, brush);
     }
 }
