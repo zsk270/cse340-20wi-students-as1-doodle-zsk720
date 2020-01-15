@@ -2,6 +2,7 @@ package cse340.doodle;
 
 import android.animation.ObjectAnimator;
 import android.graphics.Color;
+import android.graphics.Path;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -25,5 +26,11 @@ public class Part1Activity extends Part1 {
                 Color.rgb(145,123,76));
 
         // TODO: Do your animation with the UW text view here! It's stored in the "uw" variable.
+        Path path = new Path();
+        path.moveTo(scaleX(50f), scaleY(1650f));
+        path.lineTo(scaleX(1050f), scaleY(1650f));
+        ObjectAnimator animator = ObjectAnimator.ofFloat(uw, TextView.X, TextView.Y, path);
+        animator.setDuration(1000);
+        animator.start();
     }
 }
