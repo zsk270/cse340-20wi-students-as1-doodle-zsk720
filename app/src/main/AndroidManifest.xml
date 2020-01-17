@@ -11,17 +11,17 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".Part1Activity">
             <!-- Comment this out to switch to the Part 2 activity -->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-        <activity android:name=".Part2Activity">
-            <!-- Uncomment this to switch to the Part 2 activity -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Part2Activity">
+            <!-- Uncomment this to switch to the Part 2 activity -->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 </manifest>
