@@ -21,11 +21,6 @@ public abstract class Part1 extends Doodler {
         // Creates ImageView and add it to canvas.
         ImageView imageView = new ImageView(this);
         mainCanvas.addView(imageView);
-        /*
-        TODO:
-            Set the image size and location,
-            and use the imageName parameter to set the image content.
-         */
         imageView.getLayoutParams().height = size;
         imageView.getLayoutParams().width = size;
         imageView.setX(x);
@@ -40,12 +35,6 @@ public abstract class Part1 extends Doodler {
     @Override
     public TextView addText(FrameLayout mainCanvas, String text, float x, float y, int fontSize,
                             int color) {
-        /*
-        TODO:
-            Create the TextView and add it to the canvas.
-            Set size, location, and color of the text.
-            Lastly, modify the return statement to return the new TextView.
-         */
         TextView textView = new TextView(this);
         mainCanvas.addView(textView);
         textView.setText(text);
@@ -64,10 +53,6 @@ public abstract class Part1 extends Doodler {
         mainCanvas.addView(line);
         line.setX(startX);
         line.setY(startY);
-        /*
-        TODO:
-            Create a line and add it to the canvas.
-         */
         return line;
     }
 }

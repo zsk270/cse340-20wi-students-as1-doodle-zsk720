@@ -19,16 +19,9 @@ public class LineView extends AppCompatImageView {
         brush = new Paint();
         brush.setColor(color);
         brush.setStrokeWidth(width);
-        /*
-         * TODO: Write the constructor for your LineView class.
-         * You should use the provided fields to record the state of the line.
-         * These fields will then be referenced in the onDraw method below.
-         */
-
     }
 
     protected void onDraw(Canvas canvas) {
-        // TODO: draw your line onto the canvas!
         canvas.drawLine(0, 0, endPoint.x, endPoint.y, brush);
     }
 }

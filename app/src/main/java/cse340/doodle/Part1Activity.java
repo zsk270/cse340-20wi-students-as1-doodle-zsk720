@@ -25,7 +25,6 @@ public class Part1Activity extends Part1 {
         addLine(mainCanvas, 0, scaleY(1950), scaleX(1440), scaleY(1950), 5,
                 Color.rgb(145,123,76));
 
-        // TODO: Do your animation with the UW text view here! It's stored in the "uw" variable.
         Path path = new Path();
         path.moveTo(scaleX(50f), scaleY(1650f));
         path.lineTo(scaleX(1050f), scaleY(1650f));
