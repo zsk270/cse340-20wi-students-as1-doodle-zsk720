@@ -23,9 +23,9 @@ public class Part2Activity extends Part1 {
                               {438f, startY}, {589f, startY}, {644f, startY}, {745f, startY},
                               {877f, startY}, {923f, startY}, {1023f, startY}, {1100, startY},
                               {1187, startY}};
-        float[][] endPos = {{23f, endY}, {89f, endY}, {200f, endY}, {345f, endY},
-                            {487f, endY}, {555f, endY}, {534f, endY}, {700f, endY}, {900f, endY},
-                            {968f, endY}, {1050f, endY}, {1165f, endY}, {1224f, endY}};
+        float[][] endPos = {{23f, endY}, {89f, endY}, {200f, endY}, {456f, endY},
+                            {487f, endY}, {401f, endY}, {534f, endY}, {700f, endY}, {1087f, endY},
+                            {777f, endY}, {1050f, endY}, {1000f, endY}, {1224f, endY}};
         int[] timing = {1234, 4578, 7274, 5213, 2384, 9218, 6213, 3293, 7239, 3471, 6123, 1843, 7777};
         List<ImageView> imageList = new ArrayList<>();
 
@@ -47,10 +47,10 @@ public class Part2Activity extends Part1 {
         }
 
         // Add text
-        addText(mainCanvas, "Food Rain", scaleX(250), scaleY(1200), 50, Color.rgb(45, 134, 55));
+        addText(mainCanvas, "Food Rain", scaleX(250), scaleY(1200), 50, Color.rgb(47, 204, 89));
 
         // Add line
-        addLine(mainCanvas, scaleX(250), scaleY(1450), scaleX(1275), scaleY(1450), 30, Color.rgb(23, 45, 176));
+        addLine(mainCanvas, scaleX(250), scaleY(1450), scaleX(1275), scaleY(1450), 30, Color.rgb(45, 154, 204));
     }
 
     // Moves a target via a path
